@@ -11,15 +11,11 @@ public class Cell {
 	
 	/** Constructor to initialise this cell with the specified row and col */
 	public Cell(int row, int col) {
-		
-		// TODO: Initialise the variables row, col 
-
-		
-		
-		//TODO: call the method that sets the cell content to EMPTY
-		 
+	    this.row = row;
+	    this.col = col;
+	    clear(); // Call the method to set the cell content to EMPTY
 	}
-	
+
 
 	/** Paint itself on the graphics canvas, given the Graphics context g */ 
 	public void paint(Graphics g) {
@@ -44,10 +40,7 @@ public class Cell {
 	
 	/** Set this cell's content to EMPTY */
 	public void clear() {
-		
-		// TODO: Set the value of content to Empty (Remember this is an enum)
-
-		
+	    content = Player.Empty; // Set content to the EMPTY enum value
 	}
 		
 }
